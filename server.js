@@ -21,7 +21,7 @@ app.use(express.json({ extended: false }));
 app.get('/', (req, res) => 
     res.send("http get request sent to root api endpoint")
     );
-//
+
 /**
  *  @route POST api/users
  *  @desc Register user
