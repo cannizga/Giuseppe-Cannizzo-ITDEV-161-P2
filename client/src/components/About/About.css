@@ -1,0 +1,29 @@
+#about {
+   background-image: url("Images/aboutbkd.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 1000px;
+   left: -5px;
+   top:-5px;
+   bottom:-5px;
+   position: fixed;
+   right: -5px;
+   z-index: -2;
+}
+
+#main {
+  background-color: black;
+  opacity: 65%;
+  height: 1000px;
+  margin-bottom: 20px;
+}
+
+#aboutme {
+  color: aliceblue;
+  font-size: 45px;
+  text-align: left;
+  opacity: 100%;
+  margin-left: 12px;
+  margin-top: 150px;
+}

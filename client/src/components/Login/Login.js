@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import React, { useState } from "react";
+import "./Login.css";
+import { body } from 'express-validator';
 
 const Login = ({ authenticateUser }) => {
    let history = useHistory();
@@ -51,10 +53,15 @@ const loginUser = async () => {
     authenticateUser();
 }
     return (
-        <div>
-            <h2>Log In</h2>
+        <body id = "Login">
+            
+        <div id = "logData">
+        <div class = "title2">
+            <h2 class = "log" >Log In</h2>
+        </div>
             <div>
                 <input
+                    class = "form_input"
                     type = "text"
                     placeholder = "Email"
                     name = "email"
@@ -63,6 +70,7 @@ const loginUser = async () => {
             </div>
             <div>
                 <input
+                    class = "form_input"
                     type = "text"
                     placeholder = "Password"
                     name = "password"
@@ -70,13 +78,15 @@ const loginUser = async () => {
                     onChange = {e => onChange(e)} />
             </div>
             <div>
-                <button onClick={() => loginUser()}>Log In</button>
+                <button class = "submit" onClick={() => loginUser()}>Log In</button>
             </div>
             <div>
                 {errors && errors.map(error =>
                     <div key = {error.msg}>{error.msg} </div>)}
             </div>
         </div>
+
+        </body>
     )
 
 }

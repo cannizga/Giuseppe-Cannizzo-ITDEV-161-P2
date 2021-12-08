@@ -1,0 +1,116 @@
+#Register {
+    background-image: url("Images/bckd3.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: -5px;
+    top:-5px;
+    bottom:-5px;
+    position: fixed;
+    right: -5px;
+    z-index: -1;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.title3 {
+  font-family: "Montserrat";
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  letter-spacing: 1px;
+}
+
+.reg3 {
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 65px;
+  line-height: .75;
+  margin: 500px 0;
+}
+
+#regData {
+    margin-top: 150px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 62,5%;
+}
+
+.regIn {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-left: 790px;
+  padding: 1.5rem 2rem;
+  padding-bottom: 10px;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 15%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.regIn:placeholder-shown + .form_label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+
+.subReg {
+    border-radius: 4px;
+    background-color: #304099;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-family: fantasy;
+    padding: 16px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  .subReg {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .subReg:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .subReg:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  .subReg:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  

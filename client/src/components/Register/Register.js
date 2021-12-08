@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import "./Register.css"
 
 const Register = ({ authenticateUser }) => {
     let history = useHistory();
@@ -64,10 +65,14 @@ const registerUser = async () => {
   }
 
   return (
-    <div>
+<body id = "Register">
+    <div id = "regData">
         <div>
-            <h2>Register</h2>
+            <div class = "title2">
+                <h2 class = "reg3">Register</h2>
+            </div>
             <input 
+            class = "regIn"
             type = "text"
             placeholder = "Name"
             name = "name"
@@ -76,6 +81,7 @@ const registerUser = async () => {
         </div>
         <div>
             <input 
+            class = "regIn"
             type = "text"
             placeholder = "Email"
             name = "email"
@@ -84,6 +90,7 @@ const registerUser = async () => {
         </div>
         <div>
             <input 
+            class = "regIn"
             type = "text"
             placeholder = "Password"
             name = "password"
@@ -92,6 +99,7 @@ const registerUser = async () => {
         </div>
         <div>
             <input 
+            class = "regIn"
             type = "text"
             placeholder = "Confirm Password"
             name = "passwordConfirm"
@@ -99,13 +107,14 @@ const registerUser = async () => {
             onChange={e => onChange(e)} />
         </div>
         <div>
-            <button onClick = {() => registerUser()}>Register</button>
+            <button class = "subReg" onClick = {() => registerUser()}>Register</button>
         </div>
         <div>
             {errors && errors.map(error =>
             <div key = {error.msg}>{error.msg} </div>)}
         </div>
     </div>
+</body>
     )
 
 }
